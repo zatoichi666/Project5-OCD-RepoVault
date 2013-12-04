@@ -1,0 +1,22 @@
+﻿one of which is a recursive search tool that uses the 
+metadata graph, shown in Figure 4., to make Text and Metadata queries against a package and all its 
+dependencies. 
+
+Figure 4 illustrates how the Repository server manages dependency relationships between the resources it holds. 
+Note that the metadata graph is virtual. It does not exist as an in-memory data structure. Instead all the graph 
+relationships are embedded into metadata files. To traverse the graph we open each metadata file in turn to get 
+navigation information, closing the file when we no longer need that information. Often that will be part of a 
+recursive search. The file is opened when we first navigate to that node of the graph, and is closed when the 
+recursion pops out of that node. 
+ 
+When a modified file is checked into the Repository a new version of its metadata file is created and added to the 
+repository contents along with the modified file. These do not replace the previous versions. Any packages that link 
+to the old version remained linked to the old version. When the owner of a parent package wishes to update to the 
+new version, without changing the parent contents, a new version of the parent metadata is created that links to the 
+old parent and has a dependency to the new version. This allows existing code that works to continue with their 
+working components until it becomes convenient for the owner to update. 
+
+Thoughts:
+The metadata files contain dependencies. 
+Not sure if the metadata dependency tree is completely present in absence of the content files.
+Or do the metadata files get progressively established?

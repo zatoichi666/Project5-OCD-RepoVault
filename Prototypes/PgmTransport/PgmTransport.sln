@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{89120A9F-588F-4F8A-9381-C26AE0EDB337}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OneWay", "OneWay", "{4DA04070-4886-428B-9F6D-27BE182543CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session", "Session", "{090B4F17-1E1D-4483-B20D-FBA3BB5AB21E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PgmTransport", "PgmTransport\PgmTransport.csproj", "{6155C864-E217-4C3B-8C04-D5168E6FB611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSender", "SimpleSender\SimpleSender.csproj", "{A289EB12-1F03-429D-A909-41B23F54141A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleReceiver", "SimpleReceiver\SimpleReceiver.csproj", "{F845680B-B21F-49F6-857F-45EDBF1597E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsUpdater", "NewsUpdater\NewsUpdater.csproj", "{292C706C-10C8-417A-9049-755C5F09DA01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatestNews", "LatestNews\LatestNews.csproj", "{7C285A6F-8D2E-4ECC-AFDE-034AC37D2840}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6155C864-E217-4C3B-8C04-D5168E6FB611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6155C864-E217-4C3B-8C04-D5168E6FB611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6155C864-E217-4C3B-8C04-D5168E6FB611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6155C864-E217-4C3B-8C04-D5168E6FB611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A289EB12-1F03-429D-A909-41B23F54141A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A289EB12-1F03-429D-A909-41B23F54141A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A289EB12-1F03-429D-A909-41B23F54141A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A289EB12-1F03-429D-A909-41B23F54141A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F845680B-B21F-49F6-857F-45EDBF1597E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F845680B-B21F-49F6-857F-45EDBF1597E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F845680B-B21F-49F6-857F-45EDBF1597E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F845680B-B21F-49F6-857F-45EDBF1597E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292C706C-10C8-417A-9049-755C5F09DA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292C706C-10C8-417A-9049-755C5F09DA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292C706C-10C8-417A-9049-755C5F09DA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292C706C-10C8-417A-9049-755C5F09DA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C285A6F-8D2E-4ECC-AFDE-034AC37D2840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C285A6F-8D2E-4ECC-AFDE-034AC37D2840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C285A6F-8D2E-4ECC-AFDE-034AC37D2840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C285A6F-8D2E-4ECC-AFDE-034AC37D2840}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4DA04070-4886-428B-9F6D-27BE182543CB} = {89120A9F-588F-4F8A-9381-C26AE0EDB337}
+		{090B4F17-1E1D-4483-B20D-FBA3BB5AB21E} = {89120A9F-588F-4F8A-9381-C26AE0EDB337}
+		{A289EB12-1F03-429D-A909-41B23F54141A} = {4DA04070-4886-428B-9F6D-27BE182543CB}
+		{F845680B-B21F-49F6-857F-45EDBF1597E8} = {4DA04070-4886-428B-9F6D-27BE182543CB}
+		{292C706C-10C8-417A-9049-755C5F09DA01} = {090B4F17-1E1D-4483-B20D-FBA3BB5AB21E}
+		{7C285A6F-8D2E-4ECC-AFDE-034AC37D2840} = {090B4F17-1E1D-4483-B20D-FBA3BB5AB21E}
+	EndGlobalSection
+EndGlobal

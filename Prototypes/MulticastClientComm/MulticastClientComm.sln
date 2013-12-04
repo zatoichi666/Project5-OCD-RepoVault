@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticastReceiver", "MulticastReceiver\MulticastReceiver.csproj", "{215E2F1F-D01E-415C-A26C-5A6B13B871A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticastSender", "MulticastSender\MulticastSender.csproj", "{84305A13-4749-49A7-8D87-764021490382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticastCommunicator", "MulticastCommunicator\MulticastCommunicator.csproj", "{99C8BB81-8861-4DCD-92EB-47866B8C6ECF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84305A13-4749-49A7-8D87-764021490382} = {84305A13-4749-49A7-8D87-764021490382}
+		{215E2F1F-D01E-415C-A26C-5A6B13B871A7} = {215E2F1F-D01E-415C-A26C-5A6B13B871A7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoA", "Demo\DemoA.csproj", "{15EA869D-E0B0-4AEE-B94B-060D27A83D05}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99C8BB81-8861-4DCD-92EB-47866B8C6ECF} = {99C8BB81-8861-4DCD-92EB-47866B8C6ECF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoB", "DemoB\DemoB.csproj", "{8DA570B1-25FD-412C-8421-344DAF57A151}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99C8BB81-8861-4DCD-92EB-47866B8C6ECF} = {99C8BB81-8861-4DCD-92EB-47866B8C6ECF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{215E2F1F-D01E-415C-A26C-5A6B13B871A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215E2F1F-D01E-415C-A26C-5A6B13B871A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215E2F1F-D01E-415C-A26C-5A6B13B871A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215E2F1F-D01E-415C-A26C-5A6B13B871A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84305A13-4749-49A7-8D87-764021490382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84305A13-4749-49A7-8D87-764021490382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84305A13-4749-49A7-8D87-764021490382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84305A13-4749-49A7-8D87-764021490382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C8BB81-8861-4DCD-92EB-47866B8C6ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C8BB81-8861-4DCD-92EB-47866B8C6ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C8BB81-8861-4DCD-92EB-47866B8C6ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C8BB81-8861-4DCD-92EB-47866B8C6ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EA869D-E0B0-4AEE-B94B-060D27A83D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EA869D-E0B0-4AEE-B94B-060D27A83D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EA869D-E0B0-4AEE-B94B-060D27A83D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EA869D-E0B0-4AEE-B94B-060D27A83D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA570B1-25FD-412C-8421-344DAF57A151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA570B1-25FD-412C-8421-344DAF57A151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA570B1-25FD-412C-8421-344DAF57A151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA570B1-25FD-412C-8421-344DAF57A151}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
