@@ -38,11 +38,11 @@ using System.Threading.Tasks;
 
 namespace MetadataLib
 {
-    public class someEventArgs : EventArgs
+    public class metadataEventArgs : EventArgs
     {
         private string _msg;
 
-        public someEventArgs(string msg)
+        public metadataEventArgs(string msg)
         {
             _msg = msg;
         }
@@ -83,8 +83,8 @@ namespace MetadataLib
             if (File.Exists(rootFileName + ".metadata"))
             {
                 dependencies.Add(rootFileName);
-                someEventArgs seva
-                    = new someEventArgs(rootFileName);
+                metadataEventArgs seva
+                    = new metadataEventArgs(rootFileName);
                 if (metadataEvent != null)
                     metadataEvent(this, seva);
                 Crawl(rootFileName);
@@ -99,8 +99,8 @@ namespace MetadataLib
                 dependencies.AddRange(deps);
                 foreach (String s in deps)
                 {
-                    someEventArgs seva
-                        = new someEventArgs(s);
+                    metadataEventArgs seva
+                        = new metadataEventArgs(s);
                     if (metadataEvent != null)
                         metadataEvent(this, seva);
                     Crawl(s);

@@ -21,19 +21,13 @@ namespace Demo
         }
         public Program(MetadataRecursiveCrawl metRecurse)
         {
-            //metRecurse.metadataEvent
-            //    += new MetadataRecursiveCrawl.metadataEventHandler(DisplayContents);
-
             metRecurse.metadataEvent
                 += new MetadataRecursiveCrawl.metadataEventHandler(TextSearch);            
-
-
-
         }
 
         public void DisplayContents(object obj, EventArgs seva)
         {            
-            String filename = ((someEventArgs)seva).msg;
+            String filename = ((metadataEventArgs)seva).msg;
 
             Console.WriteLine("{" + filename + "}");
             Console.Write(File.ReadAllText(filename));
@@ -42,7 +36,7 @@ namespace Demo
 
         public void TextSearch(object obj, EventArgs seva)
         {
-            String filename = ((someEventArgs)seva).msg;
+            String filename = ((metadataEventArgs)seva).msg;
             List<String> ft = new List<String>();
             ft.Add(filename);
 
