@@ -1,0 +1,1 @@
+devenv MulticastClientComm.sln /rebuild debug
